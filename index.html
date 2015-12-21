@@ -17,7 +17,6 @@
     <link href="assets/libs/slick/slick.css" rel="stylesheet" />
     <link href="assets/libs/slick/slick-theme.css" rel="stylesheet" />
     <style>
-
         .slick-list {
             margin: 30px auto 50px;
         }
@@ -55,6 +54,10 @@
             display: none;
         }
 
+        .hidden {
+            display: none;
+        }
+
         @media screen and (max-width: 640px) {
 
             #header nav ul {
@@ -73,12 +76,12 @@
     <div id="page-wrapper">
 
         <!-- Header -->
-        <header id="header">
-            <h1><a href="index.html">Jambusoft</a></h1>
+        <header id="header" class="navbar">
+            <h1><a href="#banner">Jambusoft</a></h1>
             <nav>
                 <ul>
-                    <li><a href="#Services">Services</a>|</li>
-                    <li><a href="#Technologies">Technologies</a>|</li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Technologies">Technologies</a></li>
                     <li><a href="#footer">Get in touch</a></li>
                 </ul>
                 <a href="#menu">Menu</a>
@@ -89,8 +92,7 @@
         <nav id="menu">
             <div class="inner">
                 <h2>Menu</h2>
-                <ul class="links">
-                    <li><a href="index.html">Home</a></li>
+                <ul class="links navbar">
                     <li><a href="#Services">Services</a></li>
                     <li><a href="#Technologies">Technologies</a></li>
                     <li><a href="#footer">Get in touch</a></li>
@@ -105,7 +107,7 @@
                 <!--							<div class="logo"><span class="icon fa-diamond"></span></div>-->
                 <div class="logo"><span class='icon'><img src="images/Jambu.64.png" alt="logo" /></span></div>
                 <h2>Welcome to Jamusoft</h2>
-                <p>Empower your business with us...<!--<a href="http://html5up.net">HTML5 UP</a>--></p>
+                <p>Empower your business...<!--<a href="http://html5up.net">HTML5 UP</a>--></p>
             </div>
         </section>
 
@@ -123,25 +125,17 @@
                             <div class="row uniform">
                                 <section class="6u 12u$(xsmall)">
                                     <span><img src="images/BS3.jpg" class='icon alt major' /></span>
-
-                                    <h3>Software Engineering</h3>
-
+                                    <h3 class="major">Software Engineering</h3>
                                     <!--<p>Software Development Services at Jambusoft strive to provide best in class customized solutions; be they desktop, web based, e-commerce or mobile software applications.</p>-->
                                     <ul class="alt">
                                         <li>Web application Engineering</li>
                                         <li>Windows Application Engineering</li>
                                         <li>Mobile Application Engineering</li>
                                     </ul>
-                                    <!--<ul class="fa-ul">
-                                        <li><i class="fa-li fa fa-check-square"></i>List icons (like these)</li>
-                                        <li><i class="fa-li fa fa-check-square"></i>can be used</li>
-                                        <li><i class="fa-li fa fa-spinner fa-spin"></i>to replace</li>
-                                        <li><i class="fa-li fa fa-square"></i>default bullets in lists</li>
-                                    </ul>-->
                                 </section>
                                 <section class="6u 12u$(xsmall)">
                                     <span><img src="images/BS4.jpg" class='icon alt major' /></span>
-                                    <h3>Business Solutions</h3>
+                                    <h3 class="major">Business Solutions</h3>
                                     <!--<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>-->
                                     <ul class="alt">
                                         <li>Technology Advisory</li>
@@ -152,7 +146,7 @@
                                 </section>
                                 <section class="6u 12u$(xsmall)">
                                     <span><img src="images/SM1.jpg" class='icon alt major' /></span>
-                                    <h3>Software Management</h3>
+                                    <h3 class="major">Software Management</h3>
                                     <!--<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>-->
                                     <ul class="alt">
                                         <li>IT Service Management</li>
@@ -163,7 +157,7 @@
                                 </section>
                                 <section class="6u$ 12u$(xsmall)">
                                     <span><img src="images/TM2.jpg" class='icon alt major' /></span>
-                                    <h3>Test Management</h3>
+                                    <h3 class="major">Test Management</h3>
                                     <!--<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>-->
                                     <ul class="alt">
                                         <li>Software Testing and Qualtiy Assurance</li>
@@ -178,28 +172,33 @@
             </section>
 
             <!-- Two -->
-            <section id="Technologies" class="wrapper alt spotlight style2">
+            <section id="Technologies" class="wrapper alt spotlight style3">
                 <div class="inner">
                     <!--<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>-->
                     <div class="content">
                         <h2 class="major">Technologies</h2>
-                        <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
+                        <p>Our expertise include most of the microsoft technologies.</p>
                         <!--<a href="#" class="special">Learn more</a>-->
                         <div class="slick-list">
-                            <div><img src="images/technologies/jQuery.gif" /></div>
-                            <div><img src="images/technologies/HTML5.png" /></div>
-                            <div><img src="images/technologies/Css3.gif" /></div>
-                            <div><img src="images/technologies/angularJS.png" /><h4>Angular JS</h4></div>
+                            <div><img src="images/technologies/vs.png" /></div>
+                            <div><img src="images/technologies/microsoft.net.png" /></div>
 
-                            <div><img src="images/technologies/jQuery.gif" /></div>
-                            <div><img src="images/technologies/HTML5.png" /></div>
-                            <div><img src="images/technologies/Css3.gif" /></div>
-                            <div><img src="images/technologies/angularJS.png" /><h4>Angular JS</h4></div>
+                            <div><img src="images/technologies/asp.net.png" /></div>
+                            <div><img src="images/technologies/aspnetmvc.png" /></div>
+                            <div><img src="images/technologies/csharp.png" /></div>
+                            <div><img src="images/technologies/vb.net.png" /></div>
 
-                            <div><img src="images/technologies/jQuery.gif" /></div>
-                            <div><img src="images/technologies/HTML5.png" /></div>
-                            <div><img src="images/technologies/Css3.gif" /></div>
-                            <div><img src="images/technologies/angularJS.png" /><h4>Angular JS</h4></div>
+                            <div><img src="images/technologies/sharepoint.png" /></div>
+                            <div><img src="images/technologies/mssql.png" /></div>
+
+                            <div><img src="images/technologies/javascript.png" /></div>
+                            <div><img src="images/technologies/angularjs.png" /></div>
+                            <div><img src="images/technologies/jquery.png" /></div>
+                            <div><img src="images/technologies/css3.png" /></div>
+                            <div><img src="images/technologies/html5.png" /></div>
+
+                            <div><img src="images/technologies/java.png" /></div>
+                            <div><img src="images/technologies/php.png" /></div>
 
 
                             <!--<div><h4>jQuery</h4><img src="images/technologies/jQuery.gif" /></div>
@@ -297,30 +296,61 @@
         <section id="footer">
             <div class="inner">
                 <h2 class="major">Get in touch</h2>
-                <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+                <p>We believe our knowledge and capabilities speak for themselves. So we make our consultations FREE. Now you have NO reason not to Contact Us.</p>
+                <!--At its core Star Tech is a knowledge vault.  With over 150 years of combined advanced technology services we have seen it, done it, or fixed it.  
+                And now Star Tech is offering you the keys for free.    
+                If you are a CEO, Board Member, or CTO, and simply want an opinion, evaluation or solution, Star Tech will be happy to come to you.  
+                From network security, industry compliance, or simply best practices we can help you NOT reinvent the wheel.   
+                Call today and ask for a free consultation. 
+                
+                Emergency Response Unit
+
+                If you depend on your technology your just a customer we have not met yet. Our Emergency Response Unit is not just our customers. 
+                And once we save your systems, we expect you will want to be one too
+                
+                More Info >
+                
+                Although our contracted customers enjoy 24/7/365 support and monitoring of critical systems.   
+                Some companies simply have not had the opportunity to become one of our valued customers.   
+                For them we offer our Emergency Response Unit.   
+                From Data Loss,  Catastrophe, Intentional Damage.   
+                Star Tech has the tools to save the bacon.   
+                Usually called in after the fact the team will asses the problem,  
+                determine, with you, priorities and work 24 /7 to get you back up and running.    
+                This is not the way we prefer to meet our new friends but we will be there for you either way.
+
+                If you find yourself in the problem we are just a call away.   ERU # is 724-383-1206 or eru@stipc.com-->
+
                 <form id="contact-form">
                     <div class="field">
                         <label for="name">Name</label>
                         <input type="text" name="name" id="name" />
+                        <span id="errorName"></span>
                     </div>
                     <div class="field">
                         <label for="email">Email</label>
                         <input type="email" name="email" id="email" />
+                        <span id="errorEmail"></span>
                     </div>
                     <div class="field">
                         <label for="message">Message</label>
                         <textarea name="message" id="message" rows="4"></textarea>
+                        <span id="errorMessage"></span>
                     </div>
                     <ul class="actions">
-                        <li><input id="sendMail" type="submit" value="Send Message" /></li>
+                        <li><input id="sendMail" type="button" value="Send Message" /></li>
                     </ul>
-                    <div id="thanks-msg" style="display:none">
-                        <i class="fa fa-check"></i>
-                        Thank you for contacting us. We will get back to you shortly.
+                    <div id="thanks-msg" class="hidden">
+                        <p>
+                            <i class="fa fa-check"></i>
+                            Thank you for contacting us. We will get back to you shortly.
+                        </p>
                     </div>
-                    <div id="error-msg" style="display:none">
-                        <i class="fa fa-times-circle"></i>
-                        Oops! Something went wrong while sending message. Please try again later.
+                    <div id="error-msg" class="hidden">
+                        <p>
+                            <i class="fa fa-times-circle"></i>
+                            Oops! Something went wrong while sending message. Please try again later or send us an email at <a href="mailto:info@jambusoft.com">info@jambusoft.com</a>.
+                        </p>
                     </div>
                 </form>
                 <ul class="contact">
@@ -359,9 +389,19 @@
 
     <!--For technologies carousel-->
     <script src="assets/libs/slick/slick.min.js"></script>
+
+    <!--For smooth one page navigation-->
+    <script src="assets/js/jquery.scrollTo.js"></script>
+    <script src="assets/js/jquery.nav.js"></script>
+
     <script type="text/javascript">
         $(document).ready(function () {
             $('#sendMail').click(function () {
+
+                if (!isInputValid()) {
+                    return false;
+                }
+
                 $.ajax({
                     url: "http://formspree.io/info@jambusoft.com",
                     method: 'POST',
@@ -380,6 +420,47 @@
                     }
                 });
             });
+
+            var isInputValid = function () {
+
+                var isValid = true;
+                $('#name').removeClass('error');
+                $('#email').removeClass('error');
+                $('#message').removeClass('error');
+                $('#errorName').html('').removeClass('error')
+                $('#errorEmail').html('').removeClass('error')
+                $('#errorMessage').html('').removeClass('error')
+
+                if (!$('#name').val()) {
+                    $('#name').addClass('error');
+                    $('#errorName').html('<i class="fa fa-warning"></i> Name is required.').addClass('error');
+
+                    isValid = false;
+                }
+
+                if (!$('#email').val()) {
+                    $('#email').addClass('error');
+                    $('#errorEmail').html('<i class="fa fa-warning"></i> Email is required.').addClass('error');
+                    isValid = false;
+                }
+                else if (!validateEmail($('#email').val())) {
+                    $('#email').addClass('error');
+                    $('#errorEmail').html('<i class="fa fa-warning"></i> Email is not valid.').addClass('error');
+                    isValid = false;
+                }
+
+                if (!$('#message').val()) {
+                    $('#message').addClass('error');
+                    $('#errorMessage').html('<i class="fa fa-warning"></i> Message is required.').addClass('error');
+                    isValid = false;
+                }
+
+                return isValid;
+            }
+            function validateEmail(email) {
+                var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                return re.test(email);
+            }
             var handleSuccess = function () {
                 $('#name').val('');
                 $('#email').val('');
@@ -431,12 +512,17 @@
                    }
                }]
             });
+
+            // For smooth one page navigation
+            $('.navbar').onePageNav({
+                currentClass: 'active',
+                changeHash: false,
+                scrollSpeed: 900,
+                scrollOffset: 0,
+                scrollThreshold: 0.3,
+                filter: ':not(.no-scroll)'
+            });
         });
-
-
-
-
-
     </script>
 
 </body>

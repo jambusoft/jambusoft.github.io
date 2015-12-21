@@ -1967,6 +1967,18 @@
 			border-color: #5b6ba6;
 		}
 
+        input[type="text"].error,
+		input[type="password"].error,
+		input[type="email"].error,
+		input[type="tel"].error,
+		select.error,
+		textarea.error {
+			border-color: #ff0000;            
+		}
+        span.error{
+            font-size:0.8em;
+        }
+
 	.select-wrapper {
 		text-decoration: none;
 		display: block;
@@ -2779,6 +2791,7 @@
 				display: inline-block;
 				padding: 0 1em;
                 font-size:0.8em;
+                text-transform:none;
 			}
 
 				#header nav a:before {
