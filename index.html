@@ -58,6 +58,10 @@
             display: none;
         }
 
+        #contact-form  label {
+            display:inline;
+        }
+
         @media screen and (max-width: 640px) {
 
             #header nav ul {
@@ -77,15 +81,17 @@
 
         <!-- Header -->
         <header id="header" class="navbar">
-            <h1><a href="#banner">Jambusoft</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="#Services">Services</a></li>
-                    <li><a href="#Technologies">Technologies</a></li>
-                    <li><a href="#footer">Get in touch</a></li>
-                </ul>
-                <a href="#menu">Menu</a>
-            </nav>
+            <div class="inner">
+                <h1><a href="#banner"><img src="images/JambuText.Light.png" alt="Jambusoft LLC" /></a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="#Services">Services</a></li>
+                        <li><a href="#Technologies">Technologies</a></li>
+                        <li><a href="#footer">Get in touch</a></li>
+                    </ul>
+                    <a href="#menu">Menu</a>
+                </nav>
+            </div>
         </header>
 
         <!-- Menu -->
@@ -107,7 +113,7 @@
                 <!--							<div class="logo"><span class="icon fa-diamond"></span></div>-->
                 <div class="logo"><span class='icon'><img src="images/Jambu.64.png" alt="logo" /></span></div>
                 <h2>Welcome to Jamusoft</h2>
-                <p>Empower your business...<!--<a href="http://html5up.net">HTML5 UP</a>--></p>
+                <p>Empowering your business...<!--<a href="http://html5up.net">HTML5 UP</a>--></p>
             </div>
         </section>
 
@@ -115,7 +121,7 @@
         <section id="wrapper">
 
             <!-- One -->
-            <section id="Services" class="wrapper spotlight style1">
+            <section id="Services" class="wrapper spotlight style6">
                 <div class="inner">
                     <!--									<a href="#" class="image"><img src="images/SM.jpg" alt="" /></a>-->
                     <div class="content">
@@ -128,7 +134,7 @@
                                     <h3 class="major">Software Engineering</h3>
                                     <!--<p>Software Development Services at Jambusoft strive to provide best in class customized solutions; be they desktop, web based, e-commerce or mobile software applications.</p>-->
                                     <ul class="alt">
-                                        <li>Web application Engineering</li>
+                                        <li class="special">Web application Engineering</li>
                                         <li>Windows Application Engineering</li>
                                         <li>Mobile Application Engineering</li>
                                     </ul>
@@ -172,7 +178,7 @@
             </section>
 
             <!-- Two -->
-            <section id="Technologies" class="wrapper alt spotlight style3">
+            <section id="Technologies" class="wrapper alt spotlight style7">
                 <div class="inner">
                     <!--<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>-->
                     <div class="content">
@@ -180,9 +186,7 @@
                         <p>Our expertise include most of the microsoft technologies.</p>
                         <!--<a href="#" class="special">Learn more</a>-->
                         <div class="slick-list">
-                            <div><img src="images/technologies/vs.png" /></div>
                             <div><img src="images/technologies/microsoft.net.png" /></div>
-
                             <div><img src="images/technologies/asp.net.png" /></div>
                             <div><img src="images/technologies/aspnetmvc.png" /></div>
                             <div><img src="images/technologies/csharp.png" /></div>
@@ -296,27 +300,47 @@
         <section id="footer">
             <div class="inner">
                 <h2 class="major">Get in touch</h2>
-                <p>We believe our knowledge and capabilities speak for themselves. So we make our consultations FREE. Now you have NO reason not to Contact Us.</p>
-                <!--At its core Star Tech is a knowledge vault.  With over 150 years of combined advanced technology services we have seen it, done it, or fixed it.  
-                And now Star Tech is offering you the keys for free.    
-                If you are a CEO, Board Member, or CTO, and simply want an opinion, evaluation or solution, Star Tech will be happy to come to you.  
-                From network security, industry compliance, or simply best practices we can help you NOT reinvent the wheel.   
-                Call today and ask for a free consultation. 
-                
+                <p>We are here to answer any questions you may have about us. Rich out to us and we'll respond as soon as we can.
+                Even if there is something you want and can't find it on our website, let us know and we promise we'll do our best to cater to your needs.</p>
+                <!--<p>If you have any questions or comments, or if you would like to contact us for a quote, please use the form below and we will get back to you as soon as possible.</p>
+                <p>
+                    We are always interested to hear from you.
+
+                    --------------
+
+                    If you wish to contact us, you can either use the below mentioned email address, or use the contact form below.
+                </p>
+                <p>
+                    It would be great to hear from you!
+
+                    It is quick and easy. Just drop me a line and ask for anything with which you think we could be helpful. We are looking forward to hear from you!
+                </p>
+                <p>
+                    Please use the contact form below if you have any questions or requests, concerning our services.
+
+                    We will respond to your message within 24 hours.
+                </p>-->
+                <!--<p>We believe our knowledge and capabilities speak for themselves. So we make our consultations FREE. Now you have NO reason not to Contact Us.</p>-->
+                <!--At its core Star Tech is a knowledge vault.  With over 150 years of combined advanced technology services we have seen it, done it, or fixed it.
+                And now Star Tech is offering you the keys for free.
+                If you are a CEO, Board Member, or CTO, and simply want an opinion, evaluation or solution, Star Tech will be happy to come to you.
+                From network security, industry compliance, or simply best practices we can help you NOT reinvent the wheel.
+                Call today and ask for a free consultation.
+
                 Emergency Response Unit
 
-                If you depend on your technology your just a customer we have not met yet. Our Emergency Response Unit is not just our customers. 
+                If you depend on your technology your just a customer we have not met yet. Our Emergency Response Unit is not just our customers.
                 And once we save your systems, we expect you will want to be one too
-                
+
                 More Info >
-                
-                Although our contracted customers enjoy 24/7/365 support and monitoring of critical systems.   
-                Some companies simply have not had the opportunity to become one of our valued customers.   
-                For them we offer our Emergency Response Unit.   
-                From Data Loss,  Catastrophe, Intentional Damage.   
-                Star Tech has the tools to save the bacon.   
-                Usually called in after the fact the team will asses the problem,  
-                determine, with you, priorities and work 24 /7 to get you back up and running.    
+
+                Although our contracted customers enjoy 24/7/365 support and monitoring of critical systems.
+                Some companies simply have not had the opportunity to become one of our valued customers.
+                For them we offer our Emergency Response Unit.
+                From Data Loss,  Catastrophe, Intentional Damage.
+                Star Tech has the tools to save the bacon.
+                Usually called in after the fact the team will asses the problem,
+                determine, with you, priorities and work 24 /7 to get you back up and running.
                 This is not the way we prefer to meet our new friends but we will be there for you either way.
 
                 If you find yourself in the problem we are just a call away.   ERU # is 724-383-1206 or eru@stipc.com-->
@@ -331,6 +355,10 @@
                         <label for="email">Email</label>
                         <input type="email" name="email" id="email" />
                         <span id="errorEmail"></span>
+                    </div>
+                    <div class="field">
+                        <label for="email">Phone Number</label> (if you want us to call you)
+                        <input type="text" name="phone" id="phone" />
                     </div>
                     <div class="field">
                         <label for="message">Message</label>
