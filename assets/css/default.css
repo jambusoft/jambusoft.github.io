@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-centered {
     background-color: #002846;
     box-shadow: 0px 1px 2px #002846;
-    top: 65vh;
+    top: 0vh;
     z-index: 999;
     text-align: center;
     width: 100vw;
@@ -67,32 +67,37 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateX(-50%);
 }
 
-    .navbar-centered .navbar-header {
-        position: relative;
+.navbar-centered-transparent {
+    background: url(../../images/dot.png) repeat;
+    transition: background 0.2s ease-in-out;
+}
+
+.navbar-centered .navbar-header {
+    position: relative;
+}
+
+.navbar-centered button {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+    .navbar-centered button span {
+        background-color: #002846;
     }
 
-    .navbar-centered button {
-        background-color: #ce9f52;
+.navbar-centered a.navbar-brand {
+    height: 65px;
+    position: absolute;
+    left: 0px;
+    transform: translateY(0vh);
+}
+
+    .navbar-centered a.navbar-brand img {
+        width: 160px;
     }
 
-        .navbar-centered button span {
-            background-color: #000;
-        }
-
-    .navbar-centered a.navbar-brand {
-        height: 65px;
-        position: absolute;
-        left: 0px;
-        transform: translateY(-150vh);
-    }
-
-        .navbar-centered a.navbar-brand img {
-            width: 160px;
-        }
-
-    .navbar-centered #navbar-collapse-menu {
-        text-align: center;
-    }
+.navbar-centered #navbar-collapse-menu {
+    text-align: center;
+}
 
 #navbar-collapse-menu ul.navbar-nav {
     border-bottom: 1px solid rgba(224, 220, 212, 0.5);
@@ -147,15 +152,17 @@ h1, h2, h3, h4, h5, h6 {
             transform: translateY(0vh) !important;
         }*/
 
-            .navbar-centered a.navbar-brand img {
-                width: 150px;
-            }
+    .navbar-centered a.navbar-brand img {
+        width: 150px;
+    }
 
     #navbar-collapse-menu ul.navbar-nav {
         display: inline;
     }
 }
-/***************************************Fix menu - End***************************/
+
+
+
 
 
 /*****************************************************************************/
@@ -163,6 +170,7 @@ h1, h2, h3, h4, h5, h6 {
 /*****************************************************************************/
 #home {
     height: 100vh;
+    background-color: #002846;
 }
 
     #home div.logo img {
@@ -260,6 +268,65 @@ section.page:last-of-type {
 /*****************************************************************************/
 /********** Section Themes ***************************************************/
 /*****************************************************************************/
+
+.page {
+    margin: 6.5em 0;
+    position: relative;
+}
+
+    .page:before, .page:after {
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        content: '';
+        display: block;
+        height: 6.5em;
+        position: absolute;
+        width: 100%;
+    }
+
+    .page:before {
+        left: 0;
+        top: -6.5em;
+    }
+
+    .page:after {
+        -moz-transform: scaleY(-1);
+        -webkit-transform: scaleY(-1);
+        -ms-transform: scaleY(-1);
+        transform: scaleY(-1);
+        bottom: -6.5em;
+        left: 0;
+    }
+
+    .page.alt:before {
+        -moz-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+
+    .page.alt:after {
+        -moz-transform: scaleY(-1) scaleX(-1);
+        -webkit-transform: scaleY(-1) scaleX(-1);
+        -ms-transform: scaleY(-1) scaleX(-1);
+        transform: scaleY(-1) scaleX(-1);
+    }
+
+section.theme-style0 {
+    margin-top: 0;
+    background-color: #002846;
+    color: #000;
+}
+
+    section.theme-style0 h2.major {
+        border-bottom: 2px solid rgba(0, 0, 0, 0.125);
+    }
+
+    section.theme-style0:after {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23002846;' /%3E%3C/svg%3E");
+    }
+
+
 section.theme-style1 {
     background-color: #d7d3cb;
     color: #000;
@@ -269,16 +336,14 @@ section.theme-style1 {
         border-bottom: 2px solid rgba(0, 0, 0, 0.125);
     }
 
-    section.theme-style1:before {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='50' viewBox='0 0 100 50' preserveAspectRatio='none'%3E%3Cpolygon points='0,0 50,50 0,50' style='fill:%23d7d3cb;' /%3E%3Cpolygon points='50,50 100,0 100,50' style='fill:%23d7d3cb;' /%3E%3C/svg%3E");
-    }
-
-    section.theme-style1:after {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='50' viewBox='0 0 100 50' preserveAspectRatio='none'%3E%3Crect x='0' y='0' width='100' height='50' style='fill:%23d7d3cb;' /%3E%3C/svg%3E");
+    section.theme-style1:before, section.theme-style1:after {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23d7d3cb;' /%3E%3C/svg%3E");
     }
 
 section.theme-style2 {
-    background-color: #ce9f52;
+    background-color: #cfa756;
+    /*background-color: #4D8E8E; 
+    background-color: #E7CB92;*/
     color: #000;
 }
 
@@ -286,16 +351,9 @@ section.theme-style2 {
         border-bottom: 2px solid rgba(0, 0, 0, 0.125);
     }
 
-    section.theme-style2:before {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='50' viewBox='0 0 100 50' preserveAspectRatio='none'%3E%3Cpolygon points='0,0 50,50 0,50' style='fill:%23ce9f52;' /%3E%3Cpolygon points='50,50 100,0 100,50' style='fill:%23ce9f52;' /%3E%3C/svg%3E");
-    }
-
-    section.theme-style2.alt:before {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='50' viewBox='0 0 100 50' preserveAspectRatio='none'%3E%3Cpolygon points='0,50 50,0 100,50' style='fill:%23ce9f52;' /%3E%3C/svg%3E");
-    }
-
-    section.theme-style2:after {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='50' viewBox='0 0 100 50' preserveAspectRatio='none'%3E%3Crect x='0' y='0' width='100' height='50' style='fill:%23ce9f52;' /%3E%3C/svg%3E");
+    section.theme-style2:before, section.theme-style2:after {
+        /*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='50' viewBox='0 0 100 50' preserveAspectRatio='none'%3E%3Cpolygon points='0,0 50,50 0,50' style='fill:%23ce9f52;' /%3E%3Cpolygon points='50,50 100,0 100,50' style='fill:%23ce9f52;' /%3E%3C/svg%3E");*/
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23cfa756;' /%3E%3C/svg%3E");
     }
 
 
@@ -396,6 +454,23 @@ ul.checklist {
 
 
 
+
+/*****************************************************************************/
+/********** Section - Get In Touch********************************************/
+/*****************************************************************************/
+
+.full-screen-bg {
+    background: linear-gradient(to top, rgba(00, 40, 70, 0.75), rgba(00, 40, 70, 0.8)), url("../../images/bg.jpg") no-repeat center center fixed;
+    /*background-image: linear-gradient(to top, rgba(68, 80, 135, 0.75), rgba(68, 80, 135, 0.8)), url("../../images/bg.jpg");*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+
 /*****************************************************************************/
 /********** Contact Form *****************************************************/
 /*****************************************************************************/
@@ -460,9 +535,10 @@ ul.checklist {
     text-transform: uppercase;
     transition: background-color 0.2s ease-in-out 0s;
     white-space: nowrap;
+    outline: 0;
 }
 
-    #contact-form .actions button:hover, #contact-form .actions button:focus {
+    #contact-form .actions button:hover {
         background-color: #f2980a;
         color: #000;
     }
@@ -569,7 +645,7 @@ ul.contact li {
 /********** Footer ***********************************************************/
 /*****************************************************************************/
 footer {
-    color: rgba(255, 255, 255, 0.35);
+    color: rgba(255, 255, 255, 0.55);
 }
 
     footer .copyright, footer .rights, footer .author {
