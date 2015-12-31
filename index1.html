@@ -1,0 +1,584 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Jamusoft LLC.</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main1.css" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+    <link href="assets/libs/slick/slick.css" rel="stylesheet" />
+    <link href="assets/libs/slick/slick-theme.css" rel="stylesheet" />
+
+    <style>
+        .slick-list {
+            margin: 30px auto 50px;
+        }
+
+            .slick-list h4 {
+                visibility: hidden;
+                text-align: center;
+            }
+
+            .slick-list img {
+                width: 100%;
+                margin-left: -5%;
+                transform: scale(0.5);
+                backface-visibility: hidden;
+                position: relative;
+                cursor: pointer;
+                display: block;
+                transition: transform 400ms ease 0s;
+            }
+
+            .slick-list .slick-center h4 {
+                visibility: visible;
+            }
+
+            .slick-list .slick-center img {
+                pointer-events: none;
+                transform: translate3d(0px, 0px, 0px) scale(1);
+            }
+
+        #header1 nav ul li {
+            display: inline;
+        }
+
+        #header nav a[href="#menu"] {
+            display: none;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #contact-form label {
+            display: inline;
+        }
+
+        @media screen and (max-width: 640px) {
+
+            #header nav ul {
+                display: none;
+            }
+
+            #header nav a[href="#menu"] {
+                display: block;
+            }
+        }
+
+
+        /*88&99lex header*/
+        /*body.light-header #header*/
+        .light-header #header1 {
+            border-bottom: 1px solid rgba(224, 220, 212, 0.5);
+            color: #e0dcd4;
+        }
+
+        #header1 {
+            border-bottom: 1px solid rgba(0, 40, 70, 0.2);
+            color: rgba(0, 40, 70, 0.7);
+            font-size: 0.85em;
+            height: 80px;
+            left: 16em;
+            line-height: 50px;
+            position: fixed;
+            right: 10.5em;
+            transition: top 0.1s ease-in-out 1s, opacity 0.1s ease-in-out 1s;
+            z-index: 100;
+            text-align: center;
+        }
+
+            #header1 li {
+                margin-right: 50px;
+            }
+
+            #header1 li {
+                display: inline-block;
+            }
+
+            #header1 a {
+                height: 80px;
+                line-height: 80px;
+                display: block;
+            }
+
+        .light-header #header1 li.active a {
+            border-bottom: 1px solid #e0dcd4;
+        }
+
+        #toplogo, .toplogo {
+            height: 4em;
+            left: 1.75em;
+            top: 1.75em;
+            width: 11em;
+        }
+
+        #toplogo, .toplogo {
+            background-image: url("images/JambuText.Light.png");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            cursor: pointer;
+            /*height: 50px;
+            left: 20px;
+            top: 20px;
+            width: 70px;*/
+            position: fixed;
+            transition: opacity 100ms ease-in-out 0s;
+            z-index: 100;
+        }
+
+        #home .logo {
+            display: block;
+            left: 50%;
+            margin-left: -25%;
+            min-width: 150px;
+            position: absolute;
+            top: 15%;
+            width: 50%;
+        }
+
+            #home .logo img {
+                width: 100%;
+            }
+
+        .next {
+            background-image: url("images/arrow-light.svg");
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            bottom: 8%;
+            cursor: pointer;
+            height: 100px;
+            left: 50%;
+            opacity: 0.2;
+            position: absolute;
+            transform: translateX(-50%);
+            width: 100px;
+        }
+
+        html.desktop .page {
+            backface-visibility: hidden;
+            transform: translate3d(0px, 0px, 0px);
+        }
+
+        .page.blue {
+            background: #002846 none repeat scroll 0 0;
+            color: #e0dcd4;
+        }
+
+        .page.red {
+            background: #e40046 none repeat scroll 0 0;
+        }
+
+        .page.gold {
+            background: #ce9f52 none repeat scroll 0 0;
+            color: #002846;
+        }
+
+        .page.beige {
+            background: #e0dcd4 none repeat scroll 0 0;
+            color: #002846;
+        }
+
+        .page.beige-tint {
+            background: #d7d3cb none repeat scroll 0 0;
+            color: #002846;
+        }
+
+        .page.jet {
+            background: #c0d7d2 none repeat scroll 0 0;
+            color: #002846;
+        }
+
+        .page {
+            background: #e0dcd4 none repeat scroll 0 0;
+            min-height: 50% !important;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            text-align: center;
+        }
+
+            .page h2.heading {
+                padding: 100px 0 0 0;
+            }
+
+        .img-responsive {
+            display: block;
+            height: auto;
+            max-width: 100%;
+        }
+        /*88&99lex header - end */
+    </style>
+
+    <!-- Scripts -->
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+
+    <!--For technologies carousel-->
+    <script src="assets/libs/slick/slick.min.js"></script>
+
+    <!--ScrollMagic Animations-->
+    <script type="text/javascript" src="assets/libs/scrollmagic/ScrollMagic.min.js"></script>
+    <script type="text/javascript" src="assets/libs/scrollmagic/plugins/animation.gsap.min.js"></script>
+    <script type="text/javascript" src="assets/libs/scrollmagic/plugins/debug.addIndicators.min.js"></script>
+    <script src="assets/libs/scrollmagic/gsap/TweenLite.min.js"></script>
+    <script src="assets/libs/scrollmagic/gsap/plugins/ScrollToPlugin.min.js"></script>
+</head>
+<body>
+
+    <!-- Page Wrapper -->
+    <div id="page-wrapper" class="light-header">
+
+        <!-- Header -->
+        <section class="home" id="header1" style="top: 70%;">
+            <ul id="nav">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#technologies">Technologies</a></li>
+                <li><a href="#footer">Get in touch</a></li>
+            </ul>
+        </section>
+        <div id="toplogo" style="transform: translateY(-150%);"></div>
+
+        <section id="home" class="page blue" style="height: 971px;">
+            <h1 class="logo"><img alt="Jambusoft LLC." src="images/JambuText.Light.png" class="img-responsive"></h1>
+            <a class="next" href="#services"></a>
+        </section>
+
+        <section style="top: 60%">
+            <nav role='navigation'>
+                <a id="anchor-home" href="#home">Home</a>
+                <a id="anchor-services" href="#services">Services</a>
+                <a id="anchor-technologies" href="#technologies">Technologies</a>
+                <a id="anchor-footer" href="#footer">Get in touch</a>
+            </nav>
+        </section>
+
+        <!-- Wrapper -->
+        <section id="wrapper">
+            <!-- One -->
+            <section id="services" class="wrapper spotlight style7">
+                <div class="inner">
+                    <div class="content">
+                        <h2 class="dark">Services</h2>
+                        <p>We provide industry-leading software solution using optimal technologies and business process capabilities. We ensure our client gets best return on their investment. We deliver high-quality, flexible solution that is easy to maintain and reliable.</p>
+                        <div class="box alt">
+                            <div class="row uniform">
+                                <section class="6u 12u$(xsmall)">
+                                    <span><img src="images/BS3.jpg" class='icon alt major' /></span>
+                                    <h3 class="major">Software Engineering</h3>
+                                    <!--<p>Software Development Services at Jambusoft strive to provide best in class customized solutions; be they desktop, web based, e-commerce or mobile software applications.</p>-->
+                                    <ul class="alt">
+                                        <li class="special">Web application Engineering</li>
+                                        <li>Windows Application Engineering</li>
+                                        <li>Mobile Application Engineering</li>
+                                    </ul>
+                                </section>
+                                <section class="6u 12u$(xsmall)">
+                                    <span><img src="images/BS4.jpg" class='icon alt major' /></span>
+                                    <h3 class="major">Business Solutions</h3>
+                                    <!--<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>-->
+                                    <ul class="alt">
+                                        <li>Technology Advisory</li>
+                                        <li>Business Process Automation</li>
+                                        <li>Product Engineering </li>
+                                        <li>Individually Tailored Solutions</li>
+                                    </ul>
+                                </section>
+                                <section class="6u 12u$(xsmall)">
+                                    <span><img src="images/SM1.jpg" class='icon alt major' /></span>
+                                    <h3 class="major">Software Management</h3>
+                                    <!--<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>-->
+                                    <ul class="alt">
+                                        <li>IT Service Management</li>
+                                        <li>Project Management</li>
+                                        <li>Technical Support</li>
+                                        <li>Remote Infrastructure Management</li>
+                                    </ul>
+                                </section>
+                                <section class="6u$ 12u$(xsmall)">
+                                    <span><img src="images/TM2.jpg" class='icon alt major' /></span>
+                                    <h3 class="major">Test Management</h3>
+                                    <!--<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>-->
+                                    <ul class="alt">
+                                        <li>Software Testing and Qualtiy Assurance</li>
+                                        <li>Performance Engineering</li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                        <!--<a href="#" class="special">Learn more</a>-->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Two -->
+            <section id="technologies" class="wrapper alt spotlight style8">
+                <div class="inner">
+                    <div class="content">
+                        <h2 class="dark">Technologies</h2>
+                        <p class="text-justify">
+                            Our expertise include most of the microsoft technologies, cutting edge web technologies, and various product based services.
+                            <br /><br />
+                            With our early adaption and extensive experience, we stand as an ideal partner to develop solutions such as web applications, desktop applications, product engineering, or any other need based tailered solution.
+                            <br /><br />
+                            Some of the technologies that we use are listed below :
+                        </p>
+                    </div>
+                </div>
+                <div class="slick-list">
+                    <div><img src="images/technologies/microsoft.net.png" /></div>
+                    <div><img src="images/technologies/asp.net.png" /></div>
+                    <div><img src="images/technologies/aspnetmvc.png" /></div>
+                    <div><img src="images/technologies/csharp.png" /></div>
+                    <div><img src="images/technologies/vb.net.png" /></div>
+
+                    <div><img src="images/technologies/sharepoint.png" /></div>
+                    <div><img src="images/technologies/mssql.png" /></div>
+
+                    <div><img src="images/technologies/javascript.png" /></div>
+                    <div><img src="images/technologies/angularjs.png" /></div>
+                    <div><img src="images/technologies/jquery.png" /></div>
+                    <div><img src="images/technologies/css3.png" /></div>
+                    <div><img src="images/technologies/html5.png" /></div>
+
+                    <div><img src="images/technologies/java.png" /></div>
+                    <div><img src="images/technologies/php.png" /></div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Footer -->
+        <section id="footer">
+            <div class="inner">
+                <h2 class="major">Get in touch</h2>
+                <p class="text-justify">
+                    It would be great to hear from you!
+                    <br /><br />
+                    It is quick and easy. Just drop us a line and ask for anything with which you think we could be helpful. We also welcome your suggestions to improve ourselves. We are looking forward to hear from you!
+                </p>
+                <!--
+                <p>We believe our knowledge and capabilities speak for themselves. So we make our consultations FREE. Now you have NO reason not to Contact Us.</p>
+                <p>
+                    At its core Star Tech is a knowledge vault.  With over 150 years of combined advanced technology services we have seen it, done it, or fixed it.
+                    And now Star Tech is offering you the keys for free.
+                    If you are a CEO, Board Member, or CTO, and simply want an opinion, evaluation or solution, Star Tech will be happy to come to you.
+                    From network security, industry compliance, or simply best practices we can help you NOT reinvent the wheel.
+                    Call today and ask for a free consultation.
+
+
+                    Emergency Response Unit
+
+                    If you depend on your technology your just a customer we have not met yet. Our Emergency Response Unit is not just our customers.
+                    And once we save your systems, we expect you will want to be one too
+
+                    More Info >
+
+                    Although our contracted customers enjoy 24/7/365 support and monitoring of critical systems.
+                    Some companies simply have not had the opportunity to become one of our valued customers.
+                    For them we offer our Emergency Response Unit.
+                    From Data Loss,  Catastrophe, Intentional Damage.
+                    Star Tech has the tools to save the bacon.
+                    Usually called in after the fact the team will asses the problem,
+                    determine, with you, priorities and work 24 /7 to get you back up and running.
+                    This is not the way we prefer to meet our new friends but we will be there for you either way.
+
+                    If you find yourself in the problem we are just a call away.   ERU # is 724-383-1206 or eru@stipc.com
+                </p>
+                -->
+
+                <form id="contact-form">
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" />
+                        <span id="errorName"></span>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" />
+                        <span id="errorEmail"></span>
+                    </div>
+                    <div class="field">
+                        <label for="email">Phone Number</label> (if you want us to call you)
+                        <input type="text" name="phone" id="phone" />
+                    </div>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" rows="4"></textarea>
+                        <span id="errorMessage"></span>
+                    </div>
+                    <ul class="actions">
+                        <li><input id="sendMail" type="button" value="Send Message" /></li>
+                    </ul>
+                    <div id="thanks-msg" class="hidden">
+                        <p>
+                            <i class="fa fa-check"></i>
+                            Thank you for contacting us. We will get back to you shortly.
+                        </p>
+                    </div>
+                    <div id="error-msg" class="hidden">
+                        <p>
+                            <i class="fa fa-times-circle"></i>
+                            Oops! Something went wrong while sending message. Please try again later or send us an email at <a href="mailto:info@jambusoft.com">info@jambusoft.com</a>.
+                        </p>
+                    </div>
+                </form>
+
+                <ul class="contact">
+                    <li class="fa-home">
+                        Jambusoft LLC.
+                    </li>
+                    <!--<br />
+                    1234 Somewhere Road Suite #2894<br />
+                    Nashville, TN 00000-0000-->
+                    <!--<li class="fa-phone">(000) 000-0000</li>-->
+                    <li class="fa-envelope"><a href="mailto:info@jambusoft.com">info@jambusoft.com</a></li>
+                    <!--<li class="fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
+                    <li class="fa-facebook"><a href="#">facebook.com/untitled-tld</a></li>
+                    <li class="fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>-->
+                </ul>
+
+                <ul class="copyright">
+                    <li>
+                        &copy; Copyrights
+                        <script>document.write(new Date().getFullYear())</script> - Jambusoft LLC.
+                    </li>
+                    <li>All rights reserved.</li>
+                    <li>Powered by the folks of <a href="http://jambusoft.com">Jambusoft</a></li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sendMail').click(function () {
+
+                if (!isInputValid()) {
+                    return false;
+                }
+
+                $.ajax({
+                    url: "http://formspree.io/info@jambusoft.com",
+                    method: 'POST',
+                    data: $('#contact-form').serialize(),
+                    accept: "application/json",
+                    dataType: "json",
+                    beforeSend: function () {
+                        //console.log('sending message');
+                    },
+                    success: function (data) {
+                        handleSuccess();
+                    },
+                    error: function (err) {
+                        handleError();
+                        //console.log(err);
+                    }
+                });
+            });
+
+            var isInputValid = function () {
+
+                var isValid = true;
+                $('#name').removeClass('error');
+                $('#email').removeClass('error');
+                $('#message').removeClass('error');
+                $('#errorName').html('').removeClass('error')
+                $('#errorEmail').html('').removeClass('error')
+                $('#errorMessage').html('').removeClass('error')
+
+                if (!$('#name').val()) {
+                    $('#name').addClass('error');
+                    $('#errorName').html('<i class="fa fa-warning"></i> Name is required.').addClass('error');
+
+                    isValid = false;
+                }
+
+                if (!$('#email').val()) {
+                    $('#email').addClass('error');
+                    $('#errorEmail').html('<i class="fa fa-warning"></i> Email is required.').addClass('error');
+                    isValid = false;
+                }
+                else if (!validateEmail($('#email').val())) {
+                    $('#email').addClass('error');
+                    $('#errorEmail').html('<i class="fa fa-warning"></i> Email is not valid.').addClass('error');
+                    isValid = false;
+                }
+
+                if (!$('#message').val()) {
+                    $('#message').addClass('error');
+                    $('#errorMessage').html('<i class="fa fa-warning"></i> Message is required.').addClass('error');
+                    isValid = false;
+                }
+
+                return isValid;
+            }
+            function validateEmail(email) {
+                var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                return re.test(email);
+            }
+            var handleSuccess = function () {
+                $('#name').val('');
+                $('#email').val('');
+                $('#message').val('');
+                $("#thanks-msg").show().delay(10000).fadeOut();
+            }
+
+            var handleError = function () {
+                $("#error-msg").show().delay(10000).fadeOut();
+            }
+
+            //Technologies carousel
+            $('.slick-list').slick({
+                infinite: true,
+                slidesToShow: 7,
+                slidesToScroll: 1,
+                centerPadding: "0",
+                autoplay: true,
+                //variableWidth: true,
+                autoplaySpeed: 2000,
+                arrows: false,
+                centerMode: true,
+                responsive: [
+               {
+                   breakpoint: 1025,
+                   settings: {
+                       arrows: false,
+                       slidesToShow: 5,
+                       draggable: false
+                   }
+               },
+               {
+                   breakpoint: 769,
+                   settings: {
+                       arrows: false,
+                       slidesToShow: 3,
+                       draggable: false
+                   }
+               },
+               {
+                   breakpoint: 350,
+                   settings: {
+                       slidesToShow: 1,
+                       swipe: true,
+                       arrows: false,
+                       draggable: true,
+                       //dots: true,
+                       //centerPadding: "0"
+                   }
+               }]
+            });
+        });
+    </script>
+
+</body>
+</html>

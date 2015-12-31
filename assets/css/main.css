@@ -1689,6 +1689,7 @@ a {
     border-bottom: dotted 1px rgba(255, 255, 255, 0.35);
     color: #ffffff;
     text-decoration: none;
+    outline: none;
 }
 
     a:hover {
@@ -2760,11 +2761,11 @@ button,
                 margin-top: 0.3em;
             }
 
-    #header .inner {
+    /*#header .inner {
         margin: 0 auto;
         padding: 0 0 1em;
         width: 55em;
-    }
+    }*/
 
     #header nav {
         font-family: Raleway, Helvetica, sans-serif;
@@ -2841,10 +2842,10 @@ button,
 
 @media screen and (max-width: 980px) {
 
-    #header .inner {
+    /*#header .inner {
         width: 100%;
         padding: 0em 1.5em;
-    }
+    }*/
 }
 
 @media screen and (max-width: 736px) {
