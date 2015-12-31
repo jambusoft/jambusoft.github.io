@@ -34,6 +34,8 @@
                     },
                     ease: Cubic.easeInOut //Power2.easeOut
                 });
+                $('li > a.active ').removeClass('active');
+                $(this).addClass('active');
 
                 // If supported by the browser we can also update the URL
                 if (window.history && window.history.pushState) {

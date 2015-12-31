@@ -7,16 +7,16 @@
                 if (direction == 'up') {
                     //$('#main-nav').removeClass('stuck');
 
-                    $('.navbar-fixed-top').addClass('hidden');
-                    $('.navbar-main').removeClass('hidden');
+                    $('.navbar-centered').removeClass('navbar-fixed-top');
+                    //$('.navbar-main').removeClass('hidden');
                 }
             },
             exit: function (direction) {
                 if (direction == 'down') {
                     //$('#main-nav').addClass('stuck');
 
-                    $('.navbar-fixed-top').removeClass('hidden');
-                    $('.navbar-main').addClass('hidden');
+                    $('.navbar-centered').addClass('navbar-fixed-top');
+                    //$('.navbar-main').addClass('hidden');
                 }
             }
         });

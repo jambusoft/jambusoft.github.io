@@ -54,100 +54,17 @@ h1, h2, h3, h4, h5, h6 {
 /*****************************************************************************/
 /********** Navigation *******************************************************/
 /*****************************************************************************/
-.stuck {
-    position: fixed !important;
-    top: 0 !important;
-}
-
-.navbar-main {
-    text-align: center;
-    width: 100vw;
-    z-index: 999;
-    height: 60px;
-    line-height: 60px;
-    position: absolute;
-    top: 65vh;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-    .navbar-main ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        border-bottom: solid 1px rgba(224, 220, 212, 0.5);
-        display: inline-block;
-        height: 60px;
-        line-height: 60px;
-    }
-
-    .navbar-main li {
-        float: left;
-    }
-
-    .navbar-main a {
-        display: block;
-        float: left;
-        height: 60px;
-        line-height: 60px;
-        margin: 0 2em 0 2em;
-        font-size: 0.9em;
-        color: rgb(224, 220, 212);
-        outline: none;
-        text-decoration: none;
-        transition: color 0.2s ease-in-out 0s, border-bottom-color 0.2s ease-in-out 0s;
-    }
-
-        .navbar-main a:hover, nav a:active, nav a:focus {
-            color: #1e81d6;
-            text-decoration: none;
-            outline: none;
-        }
-
-        .navbar-main a.active {
-            border-bottom: solid 1px #fff;
-            outline: none;
-        }
-
-
-nav.dark {
-}
-
-    nav.dark ul {
-        border-bottom: solid 1px rgba(0, 40, 70, 0.2);
-        transition: border-bottom 0.25s ease-in-out;
-    }
-
-    nav.dark a {
-        color: rgba(0, 40, 70, 0.7);
-        transition: background-color 0.25s ease-in-out;
-    }
-
-        nav.dark a.active {
-            border-bottom: solid 1px #002846;
-            outline: none;
-        }
-
-#top-logo {
-    background-image: url("../../images/JambuText.Dark.png");
-    /*background-position: center top;*/
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    cursor: pointer;
-    height: 46px;
-    left: 20px;
-    position: fixed;
-    top: 40px;
-    transition: opacity 100ms ease-in-out 0s;
-    width: 160px;
-    z-index: 100;
-}
-
-/***************************************Fix menu***************************/
 
 .navbar-centered {
     background-color: #002846;
     box-shadow: 0px 1px 2px #002846;
+    top: 65vh;
+    z-index: 999;
+    text-align: center;
+    width: 100vw;
+    position: fixed !important;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
     .navbar-centered .navbar-header {
@@ -163,9 +80,10 @@ nav.dark {
         }
 
     .navbar-centered a.navbar-brand {
-        padding: 7px;
-        height: auto;
+        height: 65px;
         position: absolute;
+        left: 0px;
+        transform: translateY(-150vh);
     }
 
         .navbar-centered a.navbar-brand img {
@@ -177,10 +95,12 @@ nav.dark {
     }
 
 #navbar-collapse-menu ul.navbar-nav {
+    border-bottom: 1px solid rgba(224, 220, 212, 0.5);
     display: inline-block;
     float: none;
+    height: 60px;
+    line-height: 60px;
 }
-
 
     #navbar-collapse-menu ul.navbar-nav li {
     }
@@ -197,13 +117,42 @@ nav.dark {
             transition: color 0.2s ease-in-out 0s, border-bottom-color 0.2s ease-in-out 0s;
         }
 
-            #navbar-collapse-menu ul.navbar-nav li a:hover {
+            #navbar-collapse-menu ul.navbar-nav li a:hover,
+            #navbar-collapse-menu ul.navbar-nav li a:focus,
+            #navbar-collapse-menu ul.navbar-nav li a:active {
                 background-color: transparent;
                 color: #1e81d6;
+                text-decoration: none;
+                outline: none;
+            }
+
+            #navbar-collapse-menu ul.navbar-nav li a.active {
+                border-bottom: solid 1px #fff;
             }
 
 @media (max-width: 768px) {
-    #navbar-collapse-menu ul.navbar-nav li {
+    .navbar-centered .navbar-header {
+        height: 65px;
+    }
+
+        .navbar-centered .navbar-header .navbar-toggle {
+            margin: 15px;
+        }
+
+    /*.navbar-centered {
+        top: 0vh !important;
+    }
+
+        .navbar-centered a.navbar-brand {
+            transform: translateY(0vh) !important;
+        }*/
+
+            .navbar-centered a.navbar-brand img {
+                width: 150px;
+            }
+
+    #navbar-collapse-menu ul.navbar-nav {
+        display: inline;
     }
 }
 /***************************************Fix menu - End***************************/
@@ -680,4 +629,3 @@ footer {
         pointer-events: none;
         transform: translate3d(0px, 0px, 0px) scale(1);
     }
-
