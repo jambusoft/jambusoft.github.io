@@ -107,9 +107,6 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 60px;
 }
 
-    #navbar-collapse-menu ul.navbar-nav li {
-    }
-
         #navbar-collapse-menu ul.navbar-nav li a {
             height: 60px;
             line-height: 60px;
@@ -135,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
                 border-bottom: solid 1px #fff;
             }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .navbar-centered .navbar-header {
         height: 65px;
     }
@@ -158,6 +155,16 @@ h1, h2, h3, h4, h5, h6 {
 
     #navbar-collapse-menu ul.navbar-nav {
         display: inline;
+    }
+
+    #navbar-collapse-menu ul.navbar-nav li {
+        margin: 0 30vw 0 30vw;
+    }
+}
+
+@media (max-width: 480px) {
+    #navbar-collapse-menu ul.navbar-nav li {
+        margin: 0 15vw 0 15vw;
     }
 }
 
@@ -211,63 +218,9 @@ h1, h2, h3, h4, h5, h6 {
 /*****************************************************************************/
 /********** Shared Styles - Section and Page *********************************/
 /*****************************************************************************/
-section.page {
-    margin: 6.5em 0;
-    position: relative;
-}
-
-    section.page:before, section.page:after {
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        content: '';
-        display: block;
-        height: 6.5em;
-        position: absolute;
-        width: 100%;
-    }
-
-    section.page:before {
-        left: 0;
-        top: -6.5em;
-    }
-
-    section.page:after {
-        -moz-transform: scaleY(-1);
-        -webkit-transform: scaleY(-1);
-        -ms-transform: scaleY(-1);
-        transform: scaleY(-1);
-        bottom: -6.5em;
-        left: 0;
-    }
-
-    section.page.alt:before {
-        -moz-transform: scaleX(-1);
-        -webkit-transform: scaleX(-1);
-        -ms-transform: scaleX(-1);
-        transform: scaleX(-1);
-    }
-
-    section.page.alt:after {
-        -moz-transform: scaleY(-1) scaleX(-1);
-        -webkit-transform: scaleY(-1) scaleX(-1);
-        -ms-transform: scaleY(-1) scaleX(-1);
-        transform: scaleY(-1) scaleX(-1);
-    }
-
 section > div.container {
     padding: 6em 1em 3em 1em;
 }
-
-section.page:last-of-type {
-    margin-bottom: 0;
-}
-
-
-
-
-/*****************************************************************************/
-/********** Section Themes ***************************************************/
-/*****************************************************************************/
 
 .page {
     margin: 6.5em 0;
@@ -311,6 +264,34 @@ section.page:last-of-type {
         -ms-transform: scaleY(-1) scaleX(-1);
         transform: scaleY(-1) scaleX(-1);
     }
+
+    .page:last-of-type {
+        margin-bottom: 0;
+    }
+
+@media screen and (max-width: 768px) {
+    .page {
+        margin: 3.25em 0;
+    }
+
+        .page:before, .page:after {
+            height: 3.25em;
+        }
+
+        .page:before {
+            top: -3.25em;
+        }
+
+        .page:after {
+            bottom: -3.25em;
+        }
+}
+
+
+
+/*****************************************************************************/
+/********** Section Themes ***************************************************/
+/*****************************************************************************/
 
 section.theme-style0 {
     margin-top: 0;
@@ -388,9 +369,24 @@ section.theme-style2 {
     border-bottom: solid 1px rgba(0, 0, 0, 0.15);
 }
 
-
 #services div.row img {
     width: 333px;
+}
+
+@media screen and (max-width: 768px) {
+    #services div.row h3 {
+        padding: 0.5em 0 0.5em 0;
+        border-bottom: none;
+    }
+
+    #services div.row img {
+        padding-top: 3em;
+        border-top: solid 1px rgba(0, 0, 0, 0.15);
+    }
+        #services div.row:first-of-type img {
+            padding-top: 0;
+            border-top: none;
+        }
 }
 
 
@@ -549,6 +545,10 @@ ul.checklist {
     #contact-form {
         padding-bottom: 2em;
         border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+    }
+
+    #contact-form .actions {
+        text-align: center;
     }
 
     .contact {
