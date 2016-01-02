@@ -74,6 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-centered .navbar-header {
     position: relative;
+    transform: translateY(0vh);
 }
 
 .navbar-centered button {
@@ -88,7 +89,6 @@ h1, h2, h3, h4, h5, h6 {
     height: 65px;
     position: absolute;
     left: 0px;
-    transform: translateY(0vh);
 }
 
     .navbar-centered a.navbar-brand img {
@@ -97,6 +97,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-centered #navbar-collapse-menu {
     text-align: center;
+    box-shadow: none;
 }
 
 #navbar-collapse-menu ul.navbar-nav {
@@ -121,14 +122,14 @@ h1, h2, h3, h4, h5, h6 {
 
             #navbar-collapse-menu ul.navbar-nav li a:hover,
             #navbar-collapse-menu ul.navbar-nav li a:focus,
-            #navbar-collapse-menu ul.navbar-nav li a:active {
+            #navbar-collapse-menu ul.navbar-nav li.active a {
                 background-color: transparent;
                 color: #1e81d6;
                 text-decoration: none;
                 outline: none;
             }
 
-            #navbar-collapse-menu ul.navbar-nav li a.active {
+            #navbar-collapse-menu ul.navbar-nav li.active a {
                 border-bottom: solid 1px #fff;
             }
 
@@ -155,11 +156,19 @@ h1, h2, h3, h4, h5, h6 {
 
     #navbar-collapse-menu ul.navbar-nav {
         display: inline;
+
+        height: 25px;
+        line-height: 25px;
     }
 
     #navbar-collapse-menu ul.navbar-nav li {
         margin: 0 30vw 0 30vw;
     }
+
+        #navbar-collapse-menu ul.navbar-nav li a {
+            height: 50px;
+            line-height: 50px;
+        }
 }
 
 @media (max-width: 480px) {
@@ -186,6 +195,7 @@ h1, h2, h3, h4, h5, h6 {
         top: 25vh;
         left: 50%;
         transform: translateX(-50%);
+        z-index: 999;
     }
 
 .img-next {
@@ -205,6 +215,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (max-width: 767px) {
+    #home div.logo img {
+        top: 10vh;
+    }
     .img-next {
         height: 50px;
         width: 50px;
@@ -355,11 +368,13 @@ section.theme-style2 {
     #services div.row {
         text-align: center;
     }
-
+    #services div.row > div{
+        padding: 0;
+    }
         #services div.row ul {
             display: inline-block;
             text-align: left;
-        }
+        }        
 }
 
 
@@ -646,6 +661,8 @@ ul.contact li {
 /*****************************************************************************/
 footer {
     color: rgba(255, 255, 255, 0.55);
+    max-width: 100vw;
+    overflow:hidden;
 }
 
     footer .copyright, footer .rights, footer .author {

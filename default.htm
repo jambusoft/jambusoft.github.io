@@ -7,6 +7,7 @@
     <meta name="description" content="Jambusoft LLC">
     <meta name="author" content="Jambusoft LLC">
 
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 
@@ -25,34 +26,23 @@
     <!-- Bootstrap -->
     <script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
 
+    <!-- For one page scrolling-->
+    <script src="assets/js/jquery.nav.js"></script>
+    <script src="assets/js/jquery.scrollTo.js"></script>
+    <script src="assets/js/onepagescroll.js"></script>
+    <!-- For one page scrolling - end-->
+
     <!--For technologies carousel-->
     <script src="assets/libs/slick/slick.min.js"></script>
-
-    <!--For various actions on scroll-->
-    <script src="assets/libs/waypoints/jquery.waypoints.min.js"></script>
-    <script src="assets/libs/waypoints/shortcuts/sticky.min.js"></script>
-    <script src="assets/libs/waypoints/shortcuts/inview.min.js"></script>
-
-    <!--ScrollMagic Animations-->
-    <script src="assets/libs/scrollmagic/ScrollMagic.min.js"></script>
-    <script src="assets/libs/scrollmagic/plugins/animation.gsap.min.js"></script>
-    <script src="assets/libs/scrollmagic/plugins/debug.addIndicators.min.js"></script>
-    <script src="assets/libs/scrollmagic/gsap/TweenMax.min.js"></script>
-    <script src="assets/libs/scrollmagic/gsap/plugins/ScrollToPlugin.min.js"></script>
-    <script src="assets/libs/scrollmagic/gsap/plugins/TextPlugin.min.js"></script>
-    <script src="assets/libs/scrollmagic/gsap/plugins/CSSRulePlugin.min.js"></script>
-    <script src="assets/libs/scrollmagic/gsap/plugins/ColorPropsPlugin.min.js"></script>
-    <script src="assets/libs/scrollmagic/gsap/plugins/CSSRulePlugin.min.js"></script>
-    <script src="assets/libs/scrollmagic/gsap/plugins/CSSPlugin.min.js"></script>
-    <script src="assets/libs/scrollmagic/gsap/plugins/TextPlugin.min.js"></script>
-    <script src="assets/libs/scrollmagic/gsap/plugins/AttrPlugin.min.js"></script>
-
-    <script src="assets/js/default.js"></script>
     <script src="assets/js/slicklist.js"></script>
-    <script src="assets/js/scrollmagic.js"></script>
-    <script src="assets/js/waypoints.js"></script>
-    <script src="assets/js/contactform.js"></script>
+    <!--For technologies carousel - end-->
+
+    <!--for menu parallax effect-->
     <script src="assets/js/parallax.js"></script>
+    
+    <!--For contact form validation and submition-->
+    <script src="assets/js/contactform.js"></script>
+    
 </head>
 <body class="full-screen-bg">
     <header>
@@ -74,7 +64,7 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-collapse-menu">
                     <ul class="nav navbar-nav">
-                        <li><a id="nav-home" href="#home" class="active">Home</a></li>
+                        <li class="active"><a id="nav-home" href="#home">Home</a></li>
                         <li><a id="nav-services" href="#services">Services</a></li>
                         <li><a id="nav-technologies" href="#technologies">Technologies</a></li>
                         <li><a id="nav-footer" href="#get-in-touch">Get in touch</a></li>
@@ -291,7 +281,8 @@
                     <div class="rights">All rights reserved.</div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                    <div class="author">Powered by the folks of <a href="http://jambusoft.com">Jambusoft</a></div>
+                    <!--<div class="author">Powered by the folks of <a href="http://www.jambusoft.com">Jambusoft</a></div>-->
+                    <div class="author">Powered by the folks of <a href="http://www.jambusoft.com"><img alt="Jambusoft" src="images/jambusoft.light.small.png" /></a></div>
                 </div>
             </div>
         </div>
@@ -299,11 +290,10 @@
 
     <script type="text/javascript">
         $(function () {
-            slicklist.initialize();
-            scrollmagic.initialize();
-            // waypoints.initialize();
-            contactform.initialize();
             parallax.initialize();
+            onepagescroll.initialize();
+            slicklist.initialize();
+            contactform.initialize();
         });
     </script>
 </body>
