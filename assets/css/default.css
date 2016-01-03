@@ -51,6 +51,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+.full-screen-bg {
+    background: linear-gradient(to top, rgba(00, 40, 70, 0.75), rgba(00, 40, 70, 0.8)), url("../../images/bg.jpg") no-repeat center center fixed;
+    /*background-image: linear-gradient(to top, rgba(68, 80, 135, 0.75), rgba(68, 80, 135, 0.8)), url("../../images/bg.jpg");*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
 /*****************************************************************************/
 /********** Navigation *******************************************************/
 /*****************************************************************************/
@@ -464,20 +474,6 @@ ul.checklist {
 
 
 
-
-
-/*****************************************************************************/
-/********** Section - Get In Touch********************************************/
-/*****************************************************************************/
-
-.full-screen-bg {
-    background: linear-gradient(to top, rgba(00, 40, 70, 0.75), rgba(00, 40, 70, 0.8)), url("../../images/bg.jpg") no-repeat center center fixed;
-    /*background-image: linear-gradient(to top, rgba(68, 80, 135, 0.75), rgba(68, 80, 135, 0.8)), url("../../images/bg.jpg");*/
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
 
 
 

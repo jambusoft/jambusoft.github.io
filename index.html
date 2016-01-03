@@ -57,7 +57,7 @@
         ga('send', 'pageview');
     </script>
 </head>
-<body class="full-screen-bg">
+<body>
     <header>
         <nav class="navbar navbar-centered">
             <div class="container-fluid">
@@ -306,6 +306,9 @@
             onepagescroll.initialize();
             slicklist.initialize();
             contactform.initialize();
+
+            // add background cover image once the page is loaded - for lazy loading the background image...
+            $('body').addClass('full-screen-bg');
         });
     </script>
 </body>
