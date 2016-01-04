@@ -80,7 +80,7 @@ section > div.container { padding: 6em 1em 3em 1em; }
     .page { margin: 3.25em 0; }
         .page:before, .page:after { height: 3.25em; }
         .page:before { top: -3.25em; }
-        .page:after { bottom: -3.25em; }
+        .page:after { bottom: -3.2em; }
 }
 
 /*****************************************************************************/
