@@ -20,6 +20,17 @@ var onepagescroll = (function () {
                 $('#device-dummy').remove();
             }
         });
+
+        // navigate to services section on homepage arrow click
+        $('#home a.img-next').click(function(event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: Math.round($('#services').offset().top)
+            }, 750, 'swing', function () {
+                //window.location.hash = '#services';
+            });
+        });
     };
 
     var initialize = function () {
