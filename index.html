@@ -1,48 +1,31 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Welcome to Jambusoft</title>
     <title>Jambusoft | IT Services | Consulting | Business Solutions | Software Development and Management | Test and Performance Management</title>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="Welcome to Jambusoft. We specialize in Software Engineering, Web/Windows/Mobile App Development, Project Management, Testing,QA,Performance, Technology Advisory, Product Customization, Process Automation.">
 
     <meta name="author" content="Jambusoft LLC">
+    <meta name="description" content="Welcome to Jambusoft. We specialize in Software Engineering, Web/Windows/Mobile App Development, Project Management, Testing,QA,Performance, Technology Advisory, Product Customization, Process Automation.">
     <meta name="keywords" content="Jambusoft,Software,IT,Services,Consulting,Business,Solution,Engineering,Web,Windows,Mobile,Application,Technology,Advisory,Process,Automation,Project,Product,Customization,Customize,Management,Remote,Infrastructure,Testing,Quality,Assurance,Performance,Microsoft,ASP.Net,CSharp,VB.Net,SharePoint,SQL,JavaScript,HTML,CSS,jQuery,AngularJS" />
 
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
 
-    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-
-    <link href="assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-
-    <link href="assets/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-
-    <link href="assets/libs/slick/slick.css" rel="stylesheet" />
-    <link href="assets/libs/slick/slick-theme.css" rel="stylesheet" />
-
-    <link rel="stylesheet" href="assets/css/default.css" />
+    <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/libs/slick/slick.css" />
+    <link rel="stylesheet" href="assets/css/default.min.css" />
 
     <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/libs/jquery/jquery-1.11.3.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>   <!-- Bootstrap -->
+    <script src="assets/libs/jquery/plugins/jquery.nav.min.js"></script>    <!-- For one page scrolling-->
+    <script src="assets/libs/slick/slick.min.js"></script>  <!-- For technologies carousel-->
+    <script src="assets/js/jambusoft.min.js"></script>
+
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-    <!-- Bootstrap -->
-    <script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- For one page scrolling-->
-    <script src="assets/js/jquery.nav.js"></script>
-    <script src="assets/js/jquery.scrollTo.js"></script>
-    <script src="assets/js/jambusoft/onepagescroll.js"></script>
-    <!-- For one page scrolling - end-->
-    <!--For technologies carousel-->
-    <script src="assets/libs/slick/slick.min.js"></script>
-    <script src="assets/js/jambusoft/slicklist.js"></script>
-    <!--For technologies carousel - end-->
-    <!--for menu parallax effect-->
-    <script src="assets/js/jambusoft/parallax.js"></script>
-
-    <!--For contact form validation and submition-->
-    <script src="assets/js/jambusoft/contactform.js"></script>
 
     <!-- Google Analytics -->
     <script>
@@ -70,7 +53,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#">
-                        <img alt="Jambusoft Logo" src="images/JambuText.Light.png">
+                        <img alt="Jambusoft Logo" src="images/jambusoft.large.png">
                     </a>
                 </div>
 
@@ -91,7 +74,7 @@
         <section id="home" class="alt page theme-style0">
             <div class="container">
                 <div class="logo">
-                    <img alt="Jambusoft LLC" src="images/JambuText.Light.png" class="img-responsive">
+                    <img alt="Jambusoft LLC" src="images/jambusoft.large.png" class="img-responsive">
                 </div>
                 <div>
                     <a href="#services" class="img-next"></a>
@@ -108,8 +91,8 @@
                     We provide the following types of services :
                 </p>
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <img alt="Software Engineering" src="images/service.se.png" />
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">                        
+                        <div class="sprite-services services-se"></div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <h3>Software Engineering</h3>
@@ -122,7 +105,7 @@
                 </div>
                 <div class="row">
                     <div class="pull-right col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <img alt="Business Solutions" src="images/service.bs.png" />
+                        <div class="sprite-services services-bs"></div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <h3>Business Solutions</h3>
@@ -136,7 +119,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <img alt="Software Management" src="images/service.sm.png" />
+                        <div class="sprite-services services-sm"></div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <h3>Software Management</h3>
@@ -150,7 +133,7 @@
                 </div>
                 <div class="row">
                     <div class="pull-right col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <img alt="Test Management" src="images/service.tm.png" />
+                        <div class="sprite-services services-tm"></div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <h3>Test Management</h3>
@@ -184,8 +167,8 @@
 
                     <div><img alt="SharePoint" src="images/technologies/sharepoint.png" /></div>
                     <div><img alt="MSSQL" src="images/technologies/mssql.png" /></div>
-                   
-                     <div><img alt="JavaScript" src="images/technologies/javascript.png" /></div>
+
+                    <div><img alt="JavaScript" src="images/technologies/javascript.png" /></div>
                     <div><img alt="jQuery" src="images/technologies/jquery.png" /></div>
                     <div><img alt="AngularJS" src="images/technologies/angularjs.png" /></div>
                     <div><img alt="CSS" src="images/technologies/css3.png" /></div>
