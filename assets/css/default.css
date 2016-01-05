@@ -3,9 +3,10 @@
 /*****************************************************************************/
 body { background: #002846; color: #fff; font-family: sans-serif; font-size: 16px; font-weight: 300; }
 p { margin: 0 0 2em 0; }
-a { outline: none; color:#1e81d6;}
-a img { outline : none; }
-img {border : 0;}
+a { outline: none; color: #ccaaa3; }
+    a:hover { color:  #977e79; }
+    a img { outline: none; }
+img { border: 0; }
 
 /*****************************************************************************/
 /********** Shared Styles - For Global Tags **********************************/
