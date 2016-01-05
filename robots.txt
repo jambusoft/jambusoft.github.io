@@ -1,0 +1,4 @@
+﻿Sitemap: http://jambusoft.com/sitemap.xml
+User-agent: *
+Disallow: /assets
+Disallow: /images
