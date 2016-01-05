@@ -10,6 +10,7 @@
   </settings>
   <!--The order of the <file> elements determines the order of the files in the bundle.-->
   <files>
+    <file>/assets/js/jambusoft/main.js</file>
     <file>/assets/js/jambusoft/contactform.js</file>
     <file>/assets/js/jambusoft/onepagescroll.js</file>
     <file>/assets/js/jambusoft/parallax.js</file>

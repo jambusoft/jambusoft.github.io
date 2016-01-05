@@ -1,20 +1,20 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Jambusoft | IT Services | Consulting | Business Solutions | Software Development and Management | Test and Performance Management</title>
+    <title>Jambusoft - IT Services, Consulting, Business Solutions, Software Development and Management, Test and Performance Management</title>
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <meta name="author" content="Jambusoft LLC">
-    <meta name="description" content="Welcome to Jambusoft. We specialize in Software Engineering, Web/Windows/Mobile App Development, Project Management, Testing,QA,Performance, Technology Advisory, Product Customization, Process Automation.">
-    <meta name="keywords" content="Jambusoft,Software,IT,Services,Consulting,Business,Solution,Engineering,Web,Windows,Mobile,Application,Technology,Advisory,Process,Automation,Project,Product,Customization,Customize,Management,Remote,Infrastructure,Testing,Quality,Assurance,Performance,Microsoft,ASP.Net,CSharp,VB.Net,SharePoint,SQL,JavaScript,HTML,CSS,jQuery,AngularJS" />
+    <meta name="description" content="We specialize in Software (Web/Windows/Mobile) Development,  Project Management, Application Lifecycle Management (ALM) - Testing, QA, Performance, Technology Advisory, Product Customization, Process Automation.">
+    <meta name="keywords" content="Jambusoft,Software,IT,Services,Consulting,Business,Solution,Engineering,Web,Windows,Mobile,Application,Lifecycle,Technology,Advisory,Process,Automation,Project,Product,Customization,Customize,Management,Remote,Infrastructure,Testing,Quality,Assurance,Performance,Microsoft,ASP.Net,CSharp,VB.Net,SharePoint,SQL,JavaScript,HTML,CSS,jQuery,AngularJS" />
 
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
 
     <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="assets/libs/slick/slick.css" />
+    <link rel="stylesheet" href="assets/libs/slick/slick.min.css" />
     <link rel="stylesheet" href="assets/css/default.min.css" />
 
     <!-- Scripts -->
@@ -77,6 +77,15 @@
                     <img alt="Jambusoft LLC" src="images/jambusoft.large.png" class="img-responsive">
                 </div>
                 <div>
+                    <h1 class="place-very-far">
+                        Welcome to Jambusoft. We are solution provider for IT Services, Consulting, and Business Solution.
+                        <br /><br />
+                        We specialize in Software Development, Web / Windows / Mobile Application Development, Project Management,
+                        Application Lifecycle Management (ALM) - Testing, QA, Performance Engineering, Technology Advisory,
+                        Product Customization, and Process Automation.
+                    </h1>
+                </div>
+                <div>
                     <a href="#services" class="img-next"></a>
                 </div>
             </div>
@@ -97,9 +106,9 @@
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <h3>Software Engineering</h3>
                         <ul class="checklist">
-                            <li>Web application Engineering</li>
-                            <li>Windows Application Engineering</li>
-                            <li>Mobile Application Engineering</li>
+                            <li>Web application Development</li>
+                            <li>Windows Application Development</li>
+                            <li>Mobile Application Development</li>
                         </ul>
                     </div>
                 </div>
@@ -250,9 +259,7 @@
                             -->
                             <li class="fa-envelope">
                                 <h4>Email</h4>
-                                <span>
-                                    <a href="mailto:info@jambusoft.com">info@jambusoft.com</a>
-                                </span>
+                                <span id="mainContactEmail"></span>
                             </li>
                             <!--
                             <li class="fa-twitter"><a href="#">twitter.com</a></li>
@@ -285,13 +292,7 @@
 
     <script type="text/javascript">
         $(function () {
-            parallax.initialize();
-            onepagescroll.initialize();
-            slicklist.initialize();
-            contactform.initialize();
-
-            // add background cover image once the page is loaded - for lazy loading the background image...
-            $('body').addClass('full-screen-bg');
+            main.initialize();
         });
     </script>
 </body>

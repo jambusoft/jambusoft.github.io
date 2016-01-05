@@ -20,6 +20,7 @@ h1, h2, h3, h4, h5, h6 { font-weight: 700; letter-spacing: 0.05em; margin: 0 0 1
 .no-margin { margin: 0; }
 .fa-spacing { padding: 0 0.5em 0 0; }
 .full-screen-bg { background: linear-gradient(to top, rgba(00, 40, 70, 0.75), rgba(00, 40, 70, 0.8)), url("../../images/bg.jpg") no-repeat center center fixed; background-size: cover; }
+.place-very-far { position: absolute; left: -9999em; }
 
 /*****************************************************************************/
 /********** Navigation *******************************************************/
